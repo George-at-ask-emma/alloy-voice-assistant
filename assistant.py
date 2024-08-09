@@ -136,11 +136,11 @@ class Assistant:
 
 webcam_stream = WebcamStream().start()
 
-model = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest")
+
 
 # You can use OpenAI's GPT-4o model instead of Gemini Flash
 # by uncommenting the following line:
-# model = ChatOpenAI(model="gpt-4o")
+model = ChatOpenAI(model="gpt-4o-mini")
 
 assistant = Assistant(model)
 
